@@ -7,7 +7,7 @@ import random
 from io import BytesIO
 
 # Load the model once at the beginning
-model = tf.keras.models.load_model(r"C:\Users\AMAN KUMAR\Downloads\MPDDIV4\MobileNetV2 Model\mobnet_fine_tuned_model.keras")
+model = tf.keras.models.load_model(r"/mobnet_fine_tuned_model.keras")
 
 # TensorFlow Model Prediction Function
 def model_prediction(test_image):
@@ -51,29 +51,29 @@ if app_mode == "Home":
 
     # Image Paths
     image_paths = [
-        "C:/Users/AMAN KUMAR/Downloads/MPDDIV4/MobileNetV2 Model/static/apple.jpg",
-        "C:/Users/AMAN KUMAR/Downloads/MPDDIV4/MobileNetV2 Model/static/corn.jpg",
-        "C:/Users/AMAN KUMAR/Downloads/MPDDIV4/MobileNetV2 Model/static/grape.jpg",
-        "C:/Users/AMAN KUMAR/Downloads/MPDDIV4/MobileNetV2 Model/static/potato.jpg",
-        "C:/Users/AMAN KUMAR/Downloads/MPDDIV4/MobileNetV2 Model/static/tomato.jpg",
-        "C:/Users/AMAN KUMAR/Downloads/MPDDIV4/MobileNetV2 Model/static/apple2.jpg",
-        "C:/Users/AMAN KUMAR/Downloads/MPDDIV4/MobileNetV2 Model/static/corn2.jpg",
-        "C:/Users/AMAN KUMAR/Downloads/MPDDIV4/MobileNetV2 Model/static/grape1.jpg",
-        "C:/Users/AMAN KUMAR/Downloads/MPDDIV4/MobileNetV2 Model/static/potato1.jpg",
-        "C:/Users/AMAN KUMAR/Downloads/MPDDIV4/MobileNetV2 Model/static/tomato1.jpg",
-        "C:/Users/AMAN KUMAR/Downloads/MPDDIV4/MobileNetV2 Model/static/apple.jpg",
-        "C:/Users/AMAN KUMAR/Downloads/MPDDIV4/MobileNetV2 Model/static/corn.jpg",
-        "C:/Users/AMAN KUMAR/Downloads/MPDDIV4/MobileNetV2 Model/static/grape3.jpg",
-        "C:/Users/AMAN KUMAR/Downloads/MPDDIV4/MobileNetV2 Model/static/potato2.jpg",
-        "C:/Users/AMAN KUMAR/Downloads/MPDDIV4/MobileNetV2 Model/static/tomato.jpg",
+        "/static/apple.jpg",
+        "/static/corn.jpg",
+        "/static/grape.jpg",
+        "/static/potato.jpg",
+        "/static/tomato.jpg",
+        "/static/apple2.jpg",
+        "/static/corn2.jpg",
+        "/static/grape1.jpg",
+        "/static/potato1.jpg",
+        "/static/tomato1.jpg",
+        "/static/apple.jpg",
+        "/static/corn.jpg",
+        "/static/grape3.jpg",
+        "/static/potato2.jpg",
+        "/static/tomato.jpg",
     ]
 
     image_s = [
-        "C:/Users/AMAN KUMAR/Downloads/MPDDIV4/MobileNetV2 Model/Internet_Test_Image/apple_hy.jpeg",
-        "C:/Users/AMAN KUMAR/Downloads/MPDDIV4/MobileNetV2 Model/Internet_Test_Image/apple_sb.jpeg",
-        "C:/Users/AMAN KUMAR/Downloads/MPDDIV4/MobileNetV2 Model/Internet_Test_Image/Corn-cr.jpg",
-        "C:/Users/AMAN KUMAR/Downloads/MPDDIV4/MobileNetV2 Model/Internet_Test_Image/grape_br.jpeg",
-        "C:/Users/AMAN KUMAR/Downloads/MPDDIV4/MobileNetV2 Model/Internet_Test_Image/apple_cedar_ar.jpeg",
+        "/Internet_Test_Image/apple_hy.jpeg",
+        "/Internet_Test_Image/apple_sb.jpeg",
+        "/Internet_Test_Image/Corn-cr.jpg",
+        "/Internet_Test_Image/grape_br.jpeg",
+        "/Internet_Test_Image/apple_cedar_ar.jpeg",
     ]
     
     # First image (Apple) always shown first
